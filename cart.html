@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - GIÀY XSHOP</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=
+    Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="header__wrapp">
+        <div class="header">
+            <a href="./index.html">
+                <img class="header__logo" src="./images/logo.png" alt="">
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày nike</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày adidas</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày vans</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày thời trang</a>
+                </li>
+            </ul>
+            <div class="header__act">
+                <a href="#" class="header__act-search">
+                    <ion-icon class="search-btn" name="search-outline"></ion-icon>
+                </a>
+                <a href="./cart.html" class="header__act-bag">
+                    <ion-icon class="bag-btn" name="bag-handle-outline"></ion-icon>
+                    <span class="header__act-total"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="category">
+            <div class="container">
+                <div class="category__main">
+                    <a href="#!" class="category__cart">
+                        <h4>Giỏ hàng</h4>
+                        <span class="category__cart-total">1</span>
+                    </a>
+                    <a href="#!" class="category__order">Đơn hàng đã đặt</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shoes">
+            <div class="container">
+                <div class="shoes__main">
+                    <div class="shoes__info">
+                        <h4>Sản phẩm</h4>
+                        <h4>Giá</h4>
+                        <h4>Số lượng</h4>
+                        <h4>Tổng</h4>
+                    </div>
+
+                    <div class="shoes__list">
+                        
+                    </div>
+
+
+                    <div class="shoes__plusCart">
+                        <h3 class="shoes__plusCart-left">Cộng giỏ hàng</h3>
+
+                        <div class="shoes__plusCart-right">
+                            <div class="shoes__plusCart-row shoes__plusCart-provisional">
+                                <h5>Tạm tính</h5>
+                                <span class="shoes__plusCart-provisional-value"></span>
+                            </div>
+                            <div class="shoes__plusCart-row shoes__plusCart-ship">
+                                <h5>Phí ship</h5>
+                                <span class="shoes__plusCart-ship-value"></span>
+                            </div>
+                            <div class="shoes__plusCart-row shoes__plusCart-total">
+                                <h5>Tổng</h5>
+                                <span class="shoes__plusCart-total-value"></span>
+                            </div>
+
+                            <button class="shoes__plusCart-pay">Tiến hành thanh toán</button>
+                            <a href="./index.html" class="shoes__plusCart-buyMore">Mua thêm sản phẩm khác</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container order__main">
+                <ul class="order__row order__title">
+                    <li>STT</li>
+                    <li>Thời gian đặt hàng</li>
+                    <li>Số lượng</li>
+                    <li>Tổng tiền</li>
+                </ul>
+                <div class="order__list">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__column">
+                    <img class="footer__logo" src="./images/logo.png" alt="">
+                    <h4 class="footer__desc">Hệ thống giày thể thao số 1 Hà Nội</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Hotline:</span>
+                            <a href="#" class="footer__list-link">097.567.1080</a>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 1:</span>
+                            <span class="footer__list-value">57 Quan Hoa, Cầu Giấy, HN</span>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 2:</span>
+                            <span class="footer__list-value">29 Trần Đại Nghĩa, Hai Bà Trưng, HN</span>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 3:</span>
+                            <span class="footer__list-value">61 Trần Phú, Hà Đông, HN</span>
+                        </li>      
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Hỗ trợ</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">7 cách bảo quản giày thể thao tốt nhất</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Giữ “phong độ” cho Sneaker trắng ra sao</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">9 kỹ thuật làm đẹp dành cho U30</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Dịch vụ khách hàng</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Giới thiệu XSHOP</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Hướng dẫn đặt hàng</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Chính sách đổi trả và bảo hành</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Chính sách bảo mật</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Liên hệ XSHOP</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Hệ thống cửa hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/cart.js"></script>
+
+</body>
+</html>

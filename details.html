@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/details.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=
+    Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+    <header class="header__wrapp">
+        <div class="header">
+            <a href="./index.html">
+                <img class="header__logo" src="./images/logo.png" alt="">
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày nike</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày adidas</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày vans</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Giày thời trang</a>
+                </li>
+            </ul>
+            <div class="header__act">
+                <a href="#" class="header__act-search">
+                    <ion-icon class="search-btn" name="search-outline"></ion-icon>
+                </a>
+                <a href="./cart.html" class="header__act-bag">
+                    <ion-icon class="bag-btn" name="bag-handle-outline"></ion-icon>
+                    <span class="header__act-total"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="shoes">
+
+            <div class="shoes__left">
+                <div class="shoes__left-image" href="#">
+                    <img src="" alt="">
+                    <span class="shoes__left-discount"></span>
+                </div>
+
+                <div class="shoes__left-wrapp">
+                    <div class="shoes__comment">
+                        <div class="shoes__comment-header">
+                            <h4>Đánh giá</h4>
+                            <span class="shoes__comment-total">0</span>
+                        </div>
+                        <span class="shoes__comment-quantity"><span class="shoes__comment-quantity-number"></span> đánh giá</span>
+                        <h3 class="shoes__comment-first">
+                            <span>Hãy Là Người Đầu Tiên Nhận Xét </span>
+                            <span class="shoes__comment-product"></span>
+                        </h3>
+                        <div class="shoes__comment-list">
+                            <!-- <div class="shoes__comment-item">
+                                <div class="shoes__comment-info">
+                                    <h4 class="shoes__comment-name">Đặng Phước Triều</h4>
+                                    <div class="shoes__comment-stars">
+                                        <ion-icon class="shoes__comment-star" name="star"></ion-icon>
+                                        <ion-icon class="shoes__comment-star" name="star"></ion-icon>
+                                        <ion-icon class="shoes__comment-star" name="star"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="shoes__left-content">Giày khá đẹp, sẽ ủng hộ nhiều</div>
+                            </div> -->
+                        </div>
+                    </div>
+    
+                    <div class="shoes__feedback">
+                        <span>Đánh giá của bạn</span>
+                        <div class="shoes__feedback-stars">
+                            <ion-icon class="shoes__feedback-star" name="star" data-value="1"></ion-icon>
+                            <ion-icon class="shoes__feedback-star" name="star" data-value="2"></ion-icon>
+                            <ion-icon class="shoes__feedback-star" name="star" data-value="3"></ion-icon>
+                            <ion-icon class="shoes__feedback-star" name="star" data-value="4"></ion-icon>
+                            <ion-icon class="shoes__feedback-star" name="star" data-value="5"></ion-icon>
+                        </div>
+                        <span class="shoes__form-message"></span>
+                    </div>
+    
+                    <form class="shoes__form">
+                        <div class="shoes__form-content">
+                            <input type="text" placeholder=" " class="shoes__form-content-input">
+                            <label for="">Nhận xét của bạn *</label>
+                            <span class="shoes__form-message"></span>
+                        </div>
+                        <div class="shoes__form-info">
+                            <div class="shoes__form-name">
+                                <input type="text" placeholder=" " class="shoes__form-name-input">
+                                <label for="">Tên *</label>
+                                <span class="shoes__form-message"></span>
+                            </div>
+                            <div class="shoes__form-email">
+                                <input type="text" placeholder=" " class="shoes__form-email-input">
+                                <label for="">Email *</label>
+                                <span class="shoes__form-message"></span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="shoes__form-button">Đánh giá</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="shoes__content">
+                <div class="shoes__content-navigation">
+                    <a href="./details.html">
+                        <i class="fas fa-long-arrow-alt-left "></i>
+                    </a>
+                    <a href="./details.html">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+
+                <h1 class="shoes__content-title"></h1>
+                <p class="shoes__content-desc"></p>
+                <span class="shoes__content-price"></span>
+
+                <div class="shoes__content-color">
+                    <h5>Màu sắc</h5>
+                    <div class="shoes__content-list">
+                        <img src="" alt="" class="shoes__content-image image_actived">
+                        <img src="" alt="" class="shoes__content-image">
+                        <img src="" alt="" class="shoes__content-image">
+                    </div>
+                </div>
+
+                <div class="shoes__content-size">
+                    <div class="shoes__content-top">
+                        <h5>Kích cỡ</h5>
+                        <a href="#">HD cách chọn size giày</a>
+                    </div>
+                    <div class="shoes__content-number">
+                        <div class="size_actived">36</div>
+                        <div>37</div>
+                        <div>38</div>
+                        <div>39</div>
+                        <div>40</div>
+                        <div>41</div>
+                        <div>42</div>
+                        <div>43</div>
+                    </div>
+                </div>
+
+                <a href="./cart.html" class="shoes__content-buy">Mua ngay</a>
+
+                <div class="shoes__content-policy">
+                    <div class="shoes__content-policy-heading">
+                        <h3>Chính sách giao hàng và đổi trả</h3>
+                        <ion-icon name="add-outline" class="shoes__content-add-icon"></ion-icon>
+                    </div>
+                    <div class="shoes__content-add-list shoes__content-policy-list">
+                        <div class="shoes__content-policy-item">
+                            <div>
+                                <ion-icon name="shield-half-outline"></ion-icon>
+                            </div>
+                            <span>Giao hàng hoàn toàn miễn phí 100%</span>
+                        </div>
+                        <div class="shoes__content-policy-item">
+                            <div>
+                                <ion-icon name="shield-half-outline"></ion-icon>
+                            </div>
+                            <span>An toàn với nhận hàng và trả tiền tại nhà</span>
+                        </div>
+                        <div class="shoes__content-policy-item">
+                            <div>
+                                <ion-icon name="shield-half-outline"></ion-icon>
+                            </div>
+                            <span>Bảo hành đổi trả trong vòng 60 ngày</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shoes__content-preserve">
+                    <div class="shoes__content-preserve-heading">
+                        <h3>Hướng dẫn bảo quản</h3>
+                        <ion-icon name="add-outline" class="shoes__content-add-icon"></ion-icon>
+                    </div>
+                    <div class="shoes__content-add-list shoes__content-preserve-list">
+                        <div class="shoes__content-preserve-item">
+                            <h4>Khử mùi bên trong giày</h4>
+                            <p>Bạn hãy đặt túi đựng viên chống ẩm vào bên trong giày để hút ẩm và rắc phấn rôm (có thể thay bằng cách đặt vào bên trong giày gói trà túi lọc chưa qua sử dụng) để khử mùi, giúp giày luôn khô thoáng.
+                                Để hạn chế mùi hôi và sự ẩm ướt cho giày, hãy chọn vớ chân loại tốt, có khả năng thấm hút cao. Ngoài ra, dùng các loại lót giày khử mùi cũng là một phương pháp tốt.
+                            </p>
+                        </div>
+                        <div class="shoes__content-preserve-item">
+                            <h4>Bảo quản giày khi không sử dụng</h4>
+                            <p>Khi sử dụng giày, bạn đừng vội vứt hộp đi mà hãy cất lại để dành. Khi không sử dụng, hãy nhét một ít giấy vụn vào bên trong giày để giữ cho dáng giày luôn chuẩn, đẹp. Sau đó đặt giày vào hộp bảo quản cùng túi hút ẩm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="shoes__question">
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq1.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Chất lượng sản phẩm?</h4>
+                        <span class="shoes__question-desc">Sản phẩm luôn được XSHOP kiểm định, đánh giá với chất lượng cao nhất trước khi đến tay khách hàng!</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq2.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Thời gian giao hàng?</h4>
+                        <span class="shoes__question-desc">Chúng tôi sử dụng đơn vi vận chuyển uy tín và nhanh chóng nhất, thời dự kiến từ 1-4 ngày tuy khu vực.</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq3.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Sai màu sản phẩm?</h4>
+                        <span class="shoes__question-desc">Vì 1 số yếu tố khách quan như độ sáng màn hình, chất lượng màn hình nên sản phẩm có thể ko đúng màu.</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq4.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Thời gian làm việc?</h4>
+                        <span class="shoes__question-desc">Hệ thống cửa hàng và Online làm việc từ 8:30 - 22:00 hàng ngày.</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq5.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Hàng có sẵn không?</h4>
+                        <span class="shoes__question-desc">Sản phẩm hiện có sẵn tại hệ thống cửa hàng XSHOP và online tại website.span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq6.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Đổi hàng như thế nào?</h4>
+                        <span class="shoes__question-desc">Việc đổi hàng rất dễ dàng và chúng tôi luôn muốn khách hàng ưng ý nhất. Hãy liên hệ fanpage để đổi!</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq7.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Bảo hành sản phẩm</h4>
+                        <span class="shoes__question-desc">Sản phẩm được bảo hành trong 30 ngày với bất kỳ lỗi nào. Hàng SALE không được bảo hành.</span>
+                    </div>
+                </li>
+                <li class="shoes__question-item">
+                    <img class="shoes__question-image" src="//giayxshop.vn/wp-content/themes/bnw-child/images/qq8.png" alt="">
+                    <div class="shoes__question-content">
+                        <h4 class="shoes__question-title">Chọn sai size giày?</h4>
+                        <span class="shoes__question-desc">Bạn có thể qua cửa hàng hoặc gửi lại để đổi hàng với sản phẩm mới 100%. Còn nguyên tem mác, hoá đơn mua hàng.span>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__column">
+                    <img class="footer__logo" src="./images/logo.png" alt="">
+                    <h4 class="footer__desc">Hệ thống giày thể thao số 1 Hà Nội</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Hotline:</span>
+                            <a href="#" class="footer__list-link">097.567.1080</a>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 1:</span>
+                            <span class="footer__list-value">57 Quan Hoa, Cầu Giấy, HN</span>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 2:</span>
+                            <span class="footer__list-value">29 Trần Đại Nghĩa, Hai Bà Trưng, HN</span>
+                        </li>      
+                        <li class="footer__list-item">
+                            <span class="footer__list-key">Store 3:</span>
+                            <span class="footer__list-value">61 Trần Phú, Hà Đông, HN</span>
+                        </li>      
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Hỗ trợ</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">7 cách bảo quản giày thể thao tốt nhất</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Giữ “phong độ” cho Sneaker trắng ra sao</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">9 kỹ thuật làm đẹp dành cho U30</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Dịch vụ khách hàng</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Giới thiệu XSHOP</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Hướng dẫn đặt hàng</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Chính sách đổi trả và bảo hành</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Chính sách bảo mật</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Liên hệ XSHOP</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Hệ thống cửa hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/details.js"></script>
+</body>
+</html>

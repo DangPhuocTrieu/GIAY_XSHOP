@@ -1,0 +1,305 @@
+@import 'global.scss';
+
+.category {
+    margin-bottom: 100px;
+    background-color: #eee;
+    
+    &__main {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 60px;
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            transition: 0.35s ease-in-out;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 16px;
+            color: black;
+            font-weight: 500;
+        }
+
+        &-total {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            width: 22px;
+            height: 22px;
+            border-radius: 100rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+    
+    }
+    &__cart.actived h4{
+        color: gray;
+    }
+
+    &__cart.actived::before{
+        width: 0;
+    }
+
+    &__order {
+        font-size: 16px;
+        font-weight: 500;
+        color: gray;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            transition: 0.35s ease-in-out;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+        
+    }
+    &__order.actived {
+        color: black;
+    }
+    &__order.actived::before {
+       width: 100%;
+    }
+}
+
+.shoes {
+    margin-bottom: 70px;
+
+    &__info {
+        display: grid;
+        grid-template-columns: 50% 10% 20% 20%;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(196, 194, 194);
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 50% 10% 20% 20%;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 0 30px;
+        }
+
+        &-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        &-title {
+            color: black;
+            font-size: 15px;
+            font-weight: 400;
+            padding-right: 15px;
+            line-height: 1.5;
+        }
+
+        &-number {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &-quantity {
+            width: max-content;
+            padding: 15px 10px;
+            border: 1px solid rgb(196, 194, 194);
+            display: flex;
+            align-items: center;
+            gap: 0 35px;
+            transition: 0.2s linear;
+
+            &:hover {
+                border-color: black;
+            }
+        }
+
+        &-icon {
+            cursor: pointer;
+            color: gray;
+            font-size: 24px;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        &-amount {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__plusCart {
+        margin-top: 40px;
+        padding: 40px;
+        border: 1px solid #eee;
+        display: flex;
+        
+        &-left {
+            width: 25%;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &-right{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px 0;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-of-type) {
+                padding-bottom: 30px;
+                border-bottom: 1px solid #eee;
+            }
+
+            h5 {
+                max-width: 300px;
+                width: 100%;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        &-ship {
+            span {
+                color: #909097;
+                font-weight: 500;
+            }
+        }
+
+        &-provisional, &-total {
+            span {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+        &-pay, &-buyMore {
+            height: 70px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        &-pay {
+            margin-top: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        &-buyMore {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            color: black;
+        }
+    }
+
+    @include maxWidth(1023px) {
+        &__item {
+            &-left {
+                gap: 0 15px;
+            }
+        }
+    }
+}
+
+.order {
+    display: none;
+    &__row {
+        display: grid;
+        grid-template-columns: 10% 25% 40% 20% 25%;
+        text-align: center; 
+    }
+
+    &__title {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+
+        li {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    &__item li{
+        font-weight: 400;
+    }
+}
+
+.empty-mess {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
